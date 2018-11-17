@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('home')->group(function() {
+Route::group(['prefix' => 'home', 'middleware' => ['auth']],function() {
     Route::get('/', 'HomeController@index');
 });
