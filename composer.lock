@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5fffef707cc98ceb608dd83a800d469",
+    "content-hash": "d3fbf61bba117430ac6763d72b4edf03",
     "packages": [
         {
             "name": "appstract/laravel-opcache",
@@ -3759,6 +3759,67 @@
                 "environment"
             ],
             "time": "2018-07-29T20:33:41+00:00"
+        },
+        {
+            "name": "wangju/ding-notice",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wowiwj/ding-notice.git",
+                "reference": "966dee1c27667d9568e8e5f2b0fd5232012ca9db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wowiwj/ding-notice/zipball/966dee1c27667d9568e8e5f2b0fd5232012ca9db",
+                "reference": "966dee1c27667d9568e8e5f2b0fd5232012ca9db",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DingNotice\\DingNoticeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DingNotice\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "王举",
+                    "email": "35649084@qq.com"
+                }
+            ],
+            "description": "a dingtalk robot message handle for send message",
+            "keywords": [
+                "ding notice",
+                "ding talk",
+                "laravel"
+            ],
+            "time": "2018-05-25T07:29:30+00:00"
         }
     ],
     "packages-dev": [
