@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3fbf61bba117430ac6763d72b4edf03",
+    "content-hash": "35071c8599dfe9f272c8e736fabe5c15",
     "packages": [
         {
             "name": "appstract/laravel-opcache",
@@ -588,6 +588,63 @@
                 "trusted proxy"
             ],
             "time": "2018-02-07T20:20:57+00:00"
+        },
+        {
+            "name": "germey/geetest",
+            "version": "v3.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Germey/LaravelGeetest.git",
+                "reference": "311e9b4e496b4e44cc570f29a2e17028a3454652"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Germey/LaravelGeetest/zipball/311e9b4e496b4e44cc570f29a2e17028a3454652",
+                "reference": "311e9b4e496b4e44cc570f29a2e17028a3454652",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "laravel/framework": "5.*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Germey\\Geetest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Germey",
+                    "email": "cqc@cuiqingcai.com"
+                }
+            ],
+            "description": "Geetest Package for Laravel5",
+            "keywords": [
+                "Germey",
+                "geetest",
+                "laravel"
+            ],
+            "time": "2018-07-12T12:06:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1183,16 +1240,16 @@
         },
         {
             "name": "laravel/telescope",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/telescope.git",
-                "reference": "cdfdf0e1a8509462059d6659678886eaa61cc628"
+                "reference": "e04797a31dffb0285b12231140e0f755d578705b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/telescope/zipball/cdfdf0e1a8509462059d6659678886eaa61cc628",
-                "reference": "cdfdf0e1a8509462059d6659678886eaa61cc628",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/e04797a31dffb0285b12231140e0f755d578705b",
+                "reference": "e04797a31dffb0285b12231140e0f755d578705b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1248,7 +1305,7 @@
                 "laravel",
                 "monitoring"
             ],
-            "time": "2018-11-16T22:07:27+00:00"
+            "time": "2018-11-17T16:34:20+00:00"
         },
         {
             "name": "laravel/tinker",

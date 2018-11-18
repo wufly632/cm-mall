@@ -5,6 +5,7 @@ namespace Modules\Home\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -68,5 +69,7 @@ class HomeController extends Controller
      */
     public function destroy()
     {
+        Auth::logout();
+        return redirect('login');
     }
 }
