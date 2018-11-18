@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+let path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,10 +12,42 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.js('resources/js/app.js', 'public/js')
-//    .sass('resources/sass/app.scss', 'public/css');
+mix.setPublicPath(path.join('public', 'assets'));
+mix.setResourceRoot('/assets/');
+mix.sourceMaps(! mix.inProduction());
+mix.disableNotifications();
+
+if (mix.config.hmr === true) {
+    mix.setResourceRoot('/');
+}
+
+/* Allow multiple Laravel Mix applications*/
+require('laravel-mix-merge-manifest');
+mix.mergeManifest();
+
+/*
+ |--------------------------------------------------------------------------
+ | Bootstrap SASS & jQuery bundle.
+ |--------------------------------------------------------------------------
+ |
+ | 包含 jQuery 和 Bootstrap 的捆包。
+ |
+ */
+
+mix.sass('resources/sass/app.scss', path.join('public', 'assets', 'css'))
+    .js('resources/js/bootstrap.js', path.join('public', 'assets', 'js'));
+
+
+/*
+ |--------------------------------------------------------------------------
+ | 后台可运行 js 捆
+ |--------------------------------------------------------------------------
+ |
+ | 不包含 jQuery 和 Bootstrap 的 vue 捆包。
+ |
+ */
+
+mix.js('resources/assets/admin', path.join('public', 'assets', 'js'));
 
 mix.js('resources/js/app.js', 'public/js').version();
 mix.js('resources/js/login.js', 'public/js').version();
-
-mix.sass('resources/sass/app.scss', 'public/css').version();

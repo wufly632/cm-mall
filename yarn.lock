@@ -3127,7 +3127,14 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "http://registry.npm.taobao.org/kind-of/download/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-laravel-mix@^2.0:
+laravel-mix-merge-manifest@^0.1.1:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/laravel-mix-merge-manifest/download/laravel-mix-merge-manifest-0.1.1.tgz#570f1bc37a537c0601cd51f69900cb14bdae8a8e"
+  dependencies:
+    laravel-mix "^2.1"
+    lodash "^4.17.4"
+
+laravel-mix@^2.0, laravel-mix@^2.1:
   version "2.1.14"
   resolved "http://registry.npm.taobao.org/laravel-mix/download/laravel-mix-2.1.14.tgz#5c3c778b888e21120aa9d8900c318411da2ec911"
   dependencies:
@@ -5684,6 +5691,10 @@ vue-loader@^13.7.1:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.6.0"
 
+vue-router@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
+
 vue-style-loader@^3.0.0:
   version "3.1.2"
   resolved "http://registry.npm.taobao.org/vue-style-loader/download/vue-style-loader-3.1.2.tgz#6b66ad34998fc9520c2f1e4d5fa4091641c1597a"
@@ -5705,6 +5716,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.17:
   version "2.5.17"
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vuex-router-sync@^5.0.0:
+  version "5.0.0"
+  resolved "http://registry.npm.taobao.org/vuex-router-sync/download/vuex-router-sync-5.0.0.tgz#1a225c17a1dd9e2f74af0a1b2c62072e9492b305"
 
 watchpack@^1.4.0:
   version "1.6.0"

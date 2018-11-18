@@ -109,7 +109,7 @@ return [
             'provider' => ['path' => 'Providers', 'generate' => true],
             'assets' => ['path' => 'Resources/assets', 'generate' => true],
             'lang' => ['path' => 'Resources/lang', 'generate' => true],
-            'views' => ['path' => 'Resources/views', 'generate' => true],
+            'views' => ['path' => 'Resources/views', 'generate' => false],
             'test' => ['path' => 'Tests', 'generate' => true],
             'repository' => ['path' => 'Repositories', 'generate' => false],
             'event' => ['path' => 'Events', 'generate' => false],

@@ -1,9 +1,23 @@
-@extends('home::layouts.master')
+@extends('layouts.bootstrap')
 
-@section('content')
-    <h1>Hello World</h1>
+@section('title', '后台管理')
 
-    <p>
-        This view is loaded from module: {!! config('home.name') !!}
-    </p>
-@stop
+@section('head')
+
+    @parent
+
+    <script>
+
+    </script>
+
+@endsection
+
+@section('body')
+
+    <div id="app"></div>
+
+    @parent
+
+    <script src="{{ mix('js/admin.js', 'assets') }}"></script>
+
+@endsection
