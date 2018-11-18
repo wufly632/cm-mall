@@ -20,10 +20,6 @@ Vue.use(ElementUI);
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-Vue.component('login-top-component', require('./components/LoginTopComponent.vue'));
-
 // const files = require.context('./', true, /\.vue$/i)
 
 // files.keys().map(key => {

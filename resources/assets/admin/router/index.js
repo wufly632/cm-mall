@@ -9,6 +9,11 @@ const baseRoutes = [
     { path: '', redirect: '/setting' }
 ];
 
+import settingRouter from './setting';
+const childrenRoutes = [
+    settingRouter
+];
+
 //导入模块
 import Home from '../component/Home';
 
@@ -20,7 +25,7 @@ const router = new VueRouter({
         {
             path: '/',
             component: Home,
-            children: [...baseRoutes]
+            children: [...baseRoutes, ...childrenRoutes]
         }
     ]
 });

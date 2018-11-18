@@ -13,9 +13,18 @@ class HomeController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home::index');
+        $user = $request->user();
+        $data = [
+            'csrf_token' => csrf_token(),
+            'base_url'   => url('admin'),
+            'api'        => url('api/v2'),
+            'logged'     => (bool) $user,
+            'user'       => $user,
+            'token' => '1212121212121a',
+        ];
+        return view('home::index', $data);
     }
 
     /**

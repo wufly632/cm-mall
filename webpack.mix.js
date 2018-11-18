@@ -50,4 +50,3 @@ mix.sass('resources/sass/app.scss', path.join('public', 'assets', 'css'))
 mix.js('resources/assets/admin', path.join('public', 'assets', 'js'));
 
 mix.js('resources/js/app.js', 'public/js').version();
-mix.js('resources/js/login.js', 'public/js').version();

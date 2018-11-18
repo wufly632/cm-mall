@@ -18,10 +18,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 const app = new Vue({
-    router,
-    store,
-    el: '#app',
-    render: h => h(App)
+  router,
+  store,
+  el: '#app',
+  render: h => h(App)
 });
 
 export { app, store, router };
